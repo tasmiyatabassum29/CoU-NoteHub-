@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoU NoteHub</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 15px; margin: 0; }
+    .header { text-align: center; border-bottom: 1px solid #333; padding-bottom: 10px; }
+    .search-box input { width: 92%; padding: 10px; margin: 15px 0; border-radius: 5px; border: 1px solid #444; background: #222; color: #fff; }
+    .card { background-color: #1e1e1e; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #333; }
+    .badge { background-color: #28a745; font-size: 11px; padding: 2px 6px; border-radius: 4px; }
+    .rating { color: #ffca28; font-weight: bold; }
+    button { background-color: #007bff; color: white; border: none; padding: 10px; border-radius: 5px; width: 100%; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>CoU NoteHub</h2>
+    <p>ICT Department • Peer-to-Peer Notes</p>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search by course code (e.g. ICT-1101)...">
+  </div>
+
+  <div class="card">
+    <h3>ICT-1101: C Programming</h3>
+    <p>Uploaded by: <b>CR_ICT</b> <span class="badge">Verified</span></p>
+    <p class="rating">Rating: ★★★★☆ (4.8/5)</p>
+    <button onclick="viewNote()">View PDF Note</button>
+  </div>
+
+  <div class="card">
+    <h3>ICT-1102: Data Structures</h3>
+    <p>Uploaded by: <b>Student_101</b></p>
+    <p class="rating">Rating: ★★★★★ (5.0/5)</p>
+    <button onclick="viewNote()">View PDF Note</button>
+  </div>
+
+  <script>
+    function viewNote() {
+      alert("Downloading / Previewing Course Note PDF...");
+    }
+  </script>
+
+</body>
+</html>
